@@ -15,7 +15,7 @@ public class HelloWorld implements ApplicationListener {
     public void create() {
         batch = new SpriteBatch();
         font = new BitmapFont();
-        font.setColor(Color.RED);
+        font.setColor(Color.BLACK);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class HelloWorld implements ApplicationListener {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         batch.begin();
-        font.draw(batch, "Hello World", 200, 200);
+        font.draw(batch, "Hello World Edited", 200, 200);
         batch.end();
     }
 
